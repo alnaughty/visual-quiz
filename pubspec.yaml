@@ -26,6 +26,7 @@ dependencies:
   page_transition:
   shared_preferences: 0.5.4+6
   path_provider: ^0.4.0
+  flutter_launcher_icons: ^0.7.4
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +37,10 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
+flutter_icons:
+  image_path: 'assets/images/icon.jpg'
+  android: true
+  ios: true
 flutter:
 
   # The following line ensures that the Material Icons font is

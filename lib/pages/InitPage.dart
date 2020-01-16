@@ -102,7 +102,6 @@ class _InitState extends State<InitPage>{
   Future<String> _readFile() async{
     List data;
     try{
-
       final file = await localFile;
       String body = await file.readAsString();
 ////      print(body[0] + body[body.length - 1] + "BODY ini");
@@ -137,7 +136,10 @@ class _InitState extends State<InitPage>{
 //          savedScores[x]['name'] = data[x].toString().split(',')[0].split(':')[1].toString().split('.')[0].toString().trim();
 //          savedScores[x]['score'] = data[x].toString().split(',').toString().split('.')[1].toString().split(':')[1].toString().trim();
           savedScores.sort((a,b){
-            return b['score'].toString().compareTo(a['score'].toString());
+            var fnum = double.parse(a['score'].toString());
+            var snum = double.parse(b['score'].toString());
+            return snum.compareTo(fnum);
+//            return b['score'].toString().compareTo(a['score'].toString());
           });
         });
       }

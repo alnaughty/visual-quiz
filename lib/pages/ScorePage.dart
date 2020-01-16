@@ -46,103 +46,27 @@ Future<File> _writeData(String data) async{
     startTimer();
   }
   List toSave;
+
   _saveData() async {
-    for(var xx = 0; xx< savedScores.length;xx++){
-      if(savedScores[xx]['name'] == 'null'){
-        setState(() {
-          savedScores[xx]['name'] = pName.text;
-          savedScores[xx]['score'] = score.toString();
-        });
-        break;
-      }else{
-        if(double.parse(savedScores[xx]['score'].toString().trim()) < score){
+    int nullCounter = savedScores.where((c)=> c['name'] == "null").toList().length;
+    if(nullCounter == 0) {
+      for (var xx = 0; xx < savedScores.length; xx++) {
+        double savedScoreToConvert = double.parse(savedScores[xx]['score'].toString());
+        print(savedScoreToConvert.toString() + "MAO INI an < $score");
+        if (savedScoreToConvert <
+            score) {
           setState(() {
-            savedScores[xx]['name'] = pName.text;
-            savedScores[xx]['score'] = score.toString();
+            savedScores[savedScores.length-1]['name'] = pName.text;
+            savedScores[savedScores.length-1]['score'] = score.toString();
           });
-        }else{
-          showDialog(context: context,
-          builder: (_)=> Scaffold(
-            backgroundColor: Colors.transparent,
-            body: Container(
-              alignment: Alignment.center,
-              color: Colors.transparent,
-              child: BackdropFilter(
-                  filter: prefix0.ImageFilter.blur(sigmaX: 4.0,sigmaY: 4.0),
-                  child: Container(
-                    width: 400,
-                    height: 200,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(255, 205, 65, 1),
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: Color.fromRGBO(217, 163, 13, 1),
-                      ),
-                    ),
-                    child: Container(
-                      color: Colors.transparent,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          Container(
-                            width: 300,
-                            height: 50,
-                            padding: EdgeInsets.symmetric(horizontal: 10),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Text("Your Score: "),
-                                Text("$score"),
-                              ],),
-                          ),
-
-                          Container(
-                            margin: EdgeInsets.only(left: 100, right: 100,),
-                            decoration: BoxDecoration(
-
-                              border: Border.all(color: Colors.white, width: 4),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Text("BETTER LUCK NEXT TIME!"),
-                          ),
-                          Container(
-                            width: 300,
-                            height: 50,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: <Widget>[
-                                GestureDetector(
-                                  onTap: (){
-                                    Navigator.of(context).pop(null);
-                                  },
-                                  child: Container(
-                                    width: 100,
-                                    height: 50,
-                                    alignment: AlignmentDirectional.center,
-                                    child: Text("Close",style: TextStyle(
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                    ),),
-                                    decoration: BoxDecoration(
-                                        color: Color.fromRGBO(35, 155, 162, 1),
-                                        border: Border.all(color: Colors.white, width: 4),
-                                        borderRadius: BorderRadius.circular(50)
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  )
-              ),
-            ),
-          ));
+          break;
         }
       }
+    }else{
+      setState(() {
+        savedScores[5-nullCounter]['name'] = pName.text;
+        savedScores[5-nullCounter]['score'] = score.toString();
+      });
     }
     print(savedScores);
     int counter = savedScores.where((c)=> c['name'] != "null").toList().length;
