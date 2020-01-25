@@ -84,7 +84,7 @@ void startTimer() {
     oneSec,
     (Timer timer) => setState(
       () {
-        if (_start == score) {
+        if (_start >= score) {
           _timer.cancel();
           enterName();
 //          for(var xx = 0; xx < savedScores.length;xx++){
@@ -222,6 +222,7 @@ void enterName(){
       )
     );
   }
+
   GlobalKey<ScaffoldState> _scaff = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context){

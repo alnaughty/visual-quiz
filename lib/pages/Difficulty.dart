@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:visual_quiz/pages/E_M_H_Page.dart';
 import 'package:visual_quiz/pages/QuizPage.dart';
 
 class DifficultyPage extends StatefulWidget{
@@ -28,6 +30,7 @@ class _DiffState extends State<DifficultyPage>{
   }
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIOverlays([]);
     return Scaffold(
     
       body: Container(
@@ -120,7 +123,7 @@ class _DiffState extends State<DifficultyPage>{
                      
                         GestureDetector(
                               onTap: (){
-                                Navigator.push(context, PageTransition(child: QuizPage(widget.diff[index]['content']), type: PageTransitionType.scale, alignment: Alignment.center, duration: Duration(milliseconds: 700)));
+                                Navigator.push(context, PageTransition(child: DifficultyChoice(widget.diff[index]['content']), type: PageTransitionType.scale, alignment: Alignment.center, duration: Duration(milliseconds: 700)));
                               },
                               child: Container(
                                 padding: EdgeInsets.all(0),

@@ -1,11 +1,15 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as prefix0;
 import "package:flutter/material.dart";
 import 'package:flutter/services.dart';
+import 'package:flutter_audio_player/flutter_audio_player.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:visual_quiz/audio/play_audio.dart';
+import 'package:hardware_buttons/hardware_buttons.dart' as HardwareButtons;
 import 'package:visual_quiz/pages/HighScore.dart';
 import 'package:visual_quiz/pages/Category.dart';
 import 'package:visual_quiz/variables/global.dart';
@@ -15,7 +19,7 @@ class InitPage extends StatefulWidget{
   _InitState createState() => _InitState();
 }
 class _InitState extends State<InitPage>{
-  
+  StreamSubscription<HardwareButtons.HomeButtonEvent> _homeButtonSubscription;
   void showExitGameConfirm(){
     showDialog(
       context: context,
@@ -49,6 +53,7 @@ class _InitState extends State<InitPage>{
                     GestureDetector(
                       onTap: (){
                         SystemNavigator.pop();
+                        AudioPlayer.removeAllSound();
                       },
                       child: Container(
                       width: 100,
@@ -165,12 +170,23 @@ class _InitState extends State<InitPage>{
   void initState() {
     super.initState();
     _readFile();
+    _homeButtonSubscription = HardwareButtons.homeButtonEvents.listen((event) {
+      terminate();
+    });
+    playAudio();
+  }
+  void terminate(){
+    AudioPlayer.removeAllSound();
+    SystemNavigator.pop();
   }
   @override
-  Widget build(BuildContext context) {  
+  Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIOverlays([]);
     return Scaffold(
       body: WillPopScope(
-        onWillPop: () async => false,
+        onWillPop: () {
+          terminate();
+        },
         child: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,

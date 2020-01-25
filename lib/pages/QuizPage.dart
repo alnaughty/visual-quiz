@@ -15,6 +15,7 @@ class _Qstate extends State<QuizPage>{
   PageController _controller = new PageController();
   void initState(){
     super.initState();
+    widget.conts.shuffle();
     print(widget.conts);
     
   }
@@ -123,38 +124,41 @@ class _Qstate extends State<QuizPage>{
                               child: Column(
                                 children: <Widget>[
                                   for(var x =0;x<widget.conts[index]['choices'].length;x++)
-                                  GestureDetector(
-                                    onTap:(){
-                                      if(index + 1 != 10){
-                                        if(widget.conts[index]['answer'] == (x+1).toString()){
+
+                                  Expanded(
+                                    child: GestureDetector(
+                                      onTap:(){
+                                        if(index + 1 != widget.conts.length){
+                                          if(widget.conts[index]['answer'] == (x+1).toString()){
+                                            setState(() {
+                                              score++;
+                                            });
+                                            print(widget.conts[index]['answer'] + "==" + "${x+1}");
+                                          }
+                                          _controller.nextPage(duration: kTabScrollDuration, curve: Curves.ease);
+                                        }else{
                                           setState(() {
-                                           score++; 
+                                            score++;
+                                            score = (score/widget.conts.length) * 100;
                                           });
-                                          print(widget.conts[index]['answer'] + "==" + "${x+1}");
+                                          Navigator.push(context, PageTransition(child: ScorePage(),type: PageTransitionType.scale, alignment: Alignment.center, duration: Duration(milliseconds: 700)));
                                         }
-                                        _controller.nextPage(duration: kTabScrollDuration, curve: Curves.ease);
-                                      }else{
-                                        setState(() {
-                                          score++;
-                                         score = ((score/10) * 100); 
-                                        });
-                                        Navigator.push(context, PageTransition(child: ScorePage(),type: PageTransitionType.scale, alignment: Alignment.center, duration: Duration(milliseconds: 700)));
-                                      }
-                                    },
-                                    child: Container(
-                                      padding: EdgeInsets.symmetric(horizontal: 10),
-                                      margin: EdgeInsets.symmetric(vertical: 1),
-                                      width: fullDevice.size.width,
-                                      height: fullDevice.size.height/12,
-                                      alignment: AlignmentDirectional.center,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(50),
-                                        color: Color.fromRGBO(6, 113, 4, 1)
+                                        print((score/widget.conts.length) * 100);
+                                      },
+                                      child: Container(
+                                          padding: EdgeInsets.symmetric(horizontal: 10),
+                                          margin: EdgeInsets.symmetric(vertical: 1),
+                                          alignment: AlignmentDirectional.center,
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(50),
+                                              color: Color.fromRGBO(6, 113, 4, 1)
+                                          ),
+                                          child: Text(widget.conts[index]['choices'][x]['choice_content'][0].toString().toUpperCase() + widget.conts[index]['choices'][x]['choice_content'].substring(1),textAlign: TextAlign.center, style:TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                            fontFamily: "Tahoma"
+                                          ))
                                       ),
-                                      child: Text(widget.conts[index]['choices'][x]['choice_content'].toString(),textAlign: TextAlign.center, style:TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 18,
-                                      ))
                                     ),
                                   )
                                 ],
