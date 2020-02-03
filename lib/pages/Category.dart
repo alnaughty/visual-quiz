@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:visual_quiz/pages/Difficulty.dart';
+import 'package:visual_quiz/pages/ScorePage.dart';
 import 'package:visual_quiz/variables/global.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -45,7 +46,7 @@ class _CatState extends State<CategoryPage> {
                           alignment: AlignmentDirectional.center,
                           child: Text("QUIZ CATEGORIES:",style:TextStyle(
                             color:Colors.white.withOpacity(0.8),
-                            fontSize: 40,
+                            fontSize: fd.size.width/20,
                             fontFamily: "CH"
                           )),
                         ),

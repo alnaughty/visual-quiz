@@ -28,7 +28,7 @@ class _Qstate extends State<QuizPage>{
                 height: MediaQuery.of(context).size.height,
                 color: Colors.orange,
                 child: SafeArea(
-                  child: PageView.builder(
+                  child: widget.conts.length > 0 ? PageView.builder(
                     physics: const NeverScrollableScrollPhysics(),
                     controller: _controller,
                     itemCount: widget.conts.length,
@@ -37,10 +37,10 @@ class _Qstate extends State<QuizPage>{
                         width: MediaQuery.of(context).size.width,
                         height: MediaQuery.of(context).size.height,
                         decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/masbet.gif'),
-                            fit: BoxFit.fitHeight
-                          )
+                            image: DecorationImage(
+                                image: AssetImage('assets/images/masbet.gif'),
+                                fit: BoxFit.fitHeight
+                            )
                         ),
                         child: Column(
                           children: <Widget>[
@@ -65,18 +65,18 @@ class _Qstate extends State<QuizPage>{
                                   ),
 
                                   Container(
-                                    width: fullDevice.size.width/2,
-                                    height: fullDevice.size.height/10,
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: AssetImage("assets/images/category.png")
-                                      )
-                                    ),
-                                    alignment: AlignmentDirectional.center,
-                                    child: Text(currentCat.toUpperCase(),style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 25
-                                    ),)
+                                      width: fullDevice.size.width/2,
+                                      height: fullDevice.size.height/10,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/images/category.png")
+                                          )
+                                      ),
+                                      alignment: AlignmentDirectional.center,
+                                      child: Text(currentCat.toUpperCase(),style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 25
+                                      ),)
                                   ),
                                 ],
                               ),
@@ -87,10 +87,10 @@ class _Qstate extends State<QuizPage>{
                               padding: EdgeInsets.symmetric(horizontal: 10),
                               height: fullDevice.size.height/3,
                               decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage('assets/images/screen.png'),
-                                  fit: BoxFit.fitWidth
-                                )
+                                  image: DecorationImage(
+                                      image: AssetImage('assets/images/screen.png'),
+                                      fit: BoxFit.fitWidth
+                                  )
                               ),
                               alignment: AlignmentDirectional.center,
                               child: Container(
@@ -98,10 +98,10 @@ class _Qstate extends State<QuizPage>{
                                 width: fullDevice.size.width - 20,
                                 height: fullDevice.size.height/4.3,
                                 decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: widget.conts[index]['q_img'] != null ? AssetImage(widget.conts[index]['q_img'].toString()) : NetworkImage("https://s3-eu-west-1.amazonaws.com/net.hetras.ibe/web/app/images/noimage.png"),
-                                    fit: BoxFit.fitWidth
-                                  )
+                                    image: DecorationImage(
+                                        image: widget.conts[index]['q_img'] != null ? AssetImage(widget.conts[index]['q_img'].toString()) : NetworkImage("https://s3-eu-west-1.amazonaws.com/net.hetras.ibe/web/app/images/noimage.png"),
+                                        fit: BoxFit.fitWidth
+                                    )
                                 ),
                               ),
                             ),
@@ -111,63 +111,84 @@ class _Qstate extends State<QuizPage>{
                               padding: EdgeInsets.all(10),
                               alignment: AlignmentDirectional.center,
                               child: Text(widget.conts[index]['question'],textAlign: TextAlign.center,style:TextStyle(
-                                color: Colors.white,
-                                fontFamily: "Tahoma",
-                                fontSize: 17
+                                  color: Colors.white,
+                                  fontFamily: "Tahoma",
+                                  fontSize: 17
                               )),
 
                             ),
                             Container(
-                              width: fullDevice.size.width,
-                              height: fullDevice.size.height/2.9,
-                              padding: EdgeInsets.symmetric(horizontal: 20),
-                              child: Column(
-                                children: <Widget>[
-                                  for(var x =0;x<widget.conts[index]['choices'].length;x++)
+                                width: fullDevice.size.width,
+                                height: fullDevice.size.height/2.9,
+                                padding: EdgeInsets.symmetric(horizontal: 20),
+                                child: Column(
+                                  children: <Widget>[
+                                    for(var x =0;x<widget.conts[index]['choices'].length;x++)
 
-                                  Expanded(
-                                    child: GestureDetector(
-                                      onTap:(){
-                                        if(index + 1 != widget.conts.length){
-                                          if(widget.conts[index]['answer'] == (x+1).toString()){
-                                            setState(() {
-                                              score++;
-                                            });
-                                            print(widget.conts[index]['answer'] + "==" + "${x+1}");
-                                          }
-                                          _controller.nextPage(duration: kTabScrollDuration, curve: Curves.ease);
-                                        }else{
-                                          setState(() {
-                                            score++;
-                                            score = (score/widget.conts.length) * 100;
-                                          });
-                                          Navigator.push(context, PageTransition(child: ScorePage(),type: PageTransitionType.scale, alignment: Alignment.center, duration: Duration(milliseconds: 700)));
-                                        }
-                                        print((score/widget.conts.length) * 100);
-                                      },
-                                      child: Container(
-                                          padding: EdgeInsets.symmetric(horizontal: 10),
-                                          margin: EdgeInsets.symmetric(vertical: 1),
-                                          alignment: AlignmentDirectional.center,
-                                          decoration: BoxDecoration(
-                                              borderRadius: BorderRadius.circular(50),
-                                              color: Color.fromRGBO(6, 113, 4, 1)
+                                      Expanded(
+                                        child: GestureDetector(
+                                          onTap:(){
+                                            if(index + 1 != widget.conts.length){
+                                              if(widget.conts[index]['answer'] == (x+1).toString()){
+                                                setState(() {
+                                                  score++;
+                                                });
+                                                print(widget.conts[index]['answer'] + "==" + "${x+1}");
+                                              }
+                                              _controller.nextPage(duration: kTabScrollDuration, curve: Curves.ease);
+                                            }else{
+                                              if(widget.conts[index]['answer'] == (x+1).toString()){
+                                                setState(() {
+                                                  score++;
+                                                });
+                                              }
+                                              Navigator.push(context, PageTransition(child: ScorePage(),type: PageTransitionType.scale, alignment: Alignment.center, duration: Duration(milliseconds: 700)));
+                                            }
+                                            print((score/widget.conts.length) * 100);
+                                          },
+                                          child: Container(
+                                              padding: EdgeInsets.symmetric(horizontal: 10),
+                                              margin: EdgeInsets.symmetric(vertical: 1),
+                                              alignment: AlignmentDirectional.center,
+                                              decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.circular(50),
+                                                  color: Color.fromRGBO(6, 113, 4, 1)
+                                              ),
+                                              child: Text(widget.conts[index]['choices'][x]['choice_content'][0].toString().toUpperCase() + widget.conts[index]['choices'][x]['choice_content'].substring(1),textAlign: TextAlign.center, style:TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontFamily: "Tahoma"
+                                              ))
                                           ),
-                                          child: Text(widget.conts[index]['choices'][x]['choice_content'][0].toString().toUpperCase() + widget.conts[index]['choices'][x]['choice_content'].substring(1),textAlign: TextAlign.center, style:TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 18,
-                                            fontFamily: "Tahoma"
-                                          ))
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              )
+                                        ),
+                                      )
+                                  ],
+                                )
                             )
                           ],
                         ),
                       );
                     },
+                  ) : Container(
+                    width: fullDevice.size.width,
+                    height: fullDevice.size.height,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('assets/images/masbet.gif'),
+                            fit: BoxFit.fitHeight
+                        )
+                    ),
+                    child: Center(
+                      child: Container(
+                        width: fullDevice.size.width,
+                        height: fullDevice.size.height/5,
+                        child: Image(
+                          image: AssetImage("assets/images/coming_soon.gif"),
+                          color: Colors.white,
+                          fit: BoxFit.fitHeight,
+                        ),
+                      ),
+                    ),
                   ),
                 )
       ),
