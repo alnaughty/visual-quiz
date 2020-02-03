@@ -19260,19 +19260,737 @@ List questionArray = [
           {
             "type": "easy",
             "questions": [
+              {
+                "q_img": "assets/images/math/1.1.png",
+                "question":"Susie needs 13 balloons. She already has 4 balloons. How many more balloons does she need?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"5"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"9"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"8"
+                  },
 
+                ],
+              },
+              // Q2
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Order these numbers form lowest to highest: 12,25,18, 23,14",
+                "answer": "3",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"23, 14, 18, 25, 12"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"25, 23, 18, 14, 12"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"12, 14, 18, 23, 25"
+                  },
+
+                ],
+              },
+              // Q3
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"My book has 28 pages. I've read 23 pages. How many pages are left to read?",
+                "answer": "3",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"6"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"2"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"5"
+                  },
+
+                ],
+              },
+              //Q4
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"What is the sum of 5+7?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"10"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"12"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"9"
+                  },
+                ],
+              },
+              //Q5
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"What is the sum of 10+10",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"20"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"21"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"17"
+                  },
+                ]
+              },
+              //Q6
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which adds up to 12?",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"6+6"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"5+7"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"10+2"
+                  },
+                ],
+              },
+              //Q7
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"What 3 coins add up to 25 cents?",
+                "answer": "3",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"2 pennies and 1 nickel"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"2 nickels and 1 dime"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"2 dimes and 1 nickel"
+                  },
+                ],
+              },
+              //Q8
+              {
+                "q_img": "assets/images/math/1.8.png",
+                "question":"Which add up to 14",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"7+8"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"7+7"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"4+7"
+                  },
+                ],
+              },
+              //Q9
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"How much is 5 tens and 3 ones?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"503"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"53"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"5300"
+                  },
+                ],
+              },
+              //Q10
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"How much is 1 tens and 3 ones",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"13"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"103"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"1030"
+                  },
+                ],
+              },
             ]
           },
           {
             "type": "medium",
             "questions": [
+              {
+                "q_img": "assets/images/math/2.1.png",
+                "question":"Luke had 12 pencils, but gave away 5 to his best friends. How many pencils does Luke have now? ",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"7"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"8"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"9"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"10"
+                  }
+                ],
+              },
+              // Q2
+              {
+                "q_img": "assets/images/math/2.2.png",
+                "question":"Fill in the missing two numbers? \n 34, 36,____, 40, ____",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"38,42"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"39,41"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"37,38"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"42,44"
+                  }
+                ],
+              },
+              // Q3
+              {
+                "q_img": "assets/images/math/2.3.png",
+                "question":"Perform the following subtraction:38-5=?",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"33"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"34"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"35"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"38"
+                  }
+                ],
+              },
+              //Q4
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"For the number 56, what digit is in the \n tens place? ________ ones place?___________",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"5,6"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"4,6"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"3,6"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"50,6"
+                  },
+                ],
+              },
+              //Q5
+              {
+                "q_img": "assets/images/math/2.5.png",
+                "question":"If I have 8 candies and mom gives me 6 more, how many do I have altogether?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"13"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"12"
+                  },
 
+                  {
+                    "choice_id":"3",
+                    "choice_content":"14"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"10"
+                  },
+                ],
+              },
+              //Q6
+              {
+                "q_img": "assets/images/math/2.6.png",
+                "question":"Jim has five cats. Sam has six cats. How many cats do the boys have altogether?",
+                "answer": "4",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"56 cats"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"8 cats"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"11 cats"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"10 cats"
+                  },
+                ],
+              },
+              //Q7
+              {
+                "q_img": "assets/images/math/2.7.png",
+                "question":"What is the total of 3, 4 and 6?",
+                "answer": "4",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"46"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"34"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"12"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"13"
+                  },
+                ],
+              },
+              //Q8
+              {
+                "q_img": "assets/images/math/2.8.png",
+                "question":"How many must be added to 9 to get 16?",
+                "answer": "4",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"16"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"9"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"8"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"7"
+                  },
+                ],
+              },
+              //Q9
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"9.3 + 5 + 2 + 6 + 8 = ?",
+                "answer": "4",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"22"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"42"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"35"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"24"
+                  },
+                ],
+              },
+              //Q10
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"What is 6 more than 3?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"36"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"9"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"8"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"22"
+                  },
+                ],
+              },
             ]
           },
           {
             "type": "hard",
             "questions": [
-
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which of the following is true?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"12 - 20 = 8"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"20 - 2 = 18"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"8 + 20 = 12"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"18 + 20 = 2"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"ALL OF THE ABOVE"
+                  },
+                ],
+              },
+              //2
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which number is missing: 17 + ? = 20",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"5"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"3"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"8"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"22"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"7"
+                  },
+                ],
+              },
+              //3
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"hich of the following is true?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"2 + 18 = 20 so 20 + 18 = 2"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"2 + 18 = 20 so 18 + 2 = 20"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"2 + 18 = 20 so 20 + 2 = 18"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"2 + 18 = 20 so 18 + 20 = 2"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"2 + 18 = 20 so 20 + 18 = 4"
+                  },
+                ],
+              },
+              //4
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which number fact is incorrect?",
+                "answer": "4",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"11 + 9 = 20"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"9 + 11 = 20"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"20 - 9 = 11"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"11 - 20 = 9 "
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"20 +5 = 25"
+                  },
+                ],
+              },
+              //5
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which of the following pairs of number do not add up to give 20?",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"9 + 11"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"2 + 18"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"16 + 5"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"20 + 0"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"ALL OF THE ABOVE"
+                  },
+                ],
+              },
+              //6
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which of the following is to do with addition?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"sharing"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"put together"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"take away"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"multiply"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"NONE OF THESE"
+                  },
+                ],
+              },
+              //7
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which word could be placed in the space? \n 16 ____ 4 gives an answer of 12.",
+                "answer": "4",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"divided by"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"addition"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"multiply"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"minus"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"None of the above"
+                  },
+                ],
+              },
+              //8
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"Which of the following is to do with subtraction?",
+                "answer": "2",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"adding"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"take away"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"totalling"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"in total"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"Sharing"
+                  },
+                ],
+              },
+              //9
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"What is the total of 2, 15 and 3?",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"20"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"9"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"8"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"22"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"21"
+                  },
+                ],
+              },
+              //10
+              {
+                "q_img": "assets/images/math/math.png",
+                "question":"What is the sum of 27 and 43?",
+                "answer": "1",
+                "choices":[
+                  {
+                    "choice_id":"1",
+                    "choice_content":"70"
+                  },
+                  {
+                    "choice_id":"2",
+                    "choice_content":"80"
+                  },
+                  {
+                    "choice_id":"3",
+                    "choice_content":"90"
+                  },
+                  {
+                    "choice_id":"4",
+                    "choice_content":"22"
+                  },
+                  {
+                    "choice_id":"5",
+                    "choice_content":"30"
+                  },
+                ],
+              },
             ]
           }
         ]
