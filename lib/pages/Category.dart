@@ -46,7 +46,7 @@ class _CatState extends State<CategoryPage> {
                           alignment: AlignmentDirectional.center,
                           child: Text("QUIZ CATEGORIES:",style:TextStyle(
                             color:Colors.white.withOpacity(0.8),
-                            fontSize: fd.size.width/20,
+                            fontSize: MediaQuery.of(context).size.width/11,
                             fontFamily: "CH"
                           )),
                         ),

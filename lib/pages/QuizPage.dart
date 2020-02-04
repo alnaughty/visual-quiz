@@ -98,6 +98,7 @@ class _Qstate extends State<QuizPage>{
                                 width: fullDevice.size.width - 20,
                                 height: fullDevice.size.height/4.3,
                                 decoration: BoxDecoration(
+                                  color: Colors.redAccent,
                                     image: DecorationImage(
                                         image: widget.conts[index]['q_img'] != null ? AssetImage(widget.conts[index]['q_img'].toString()) : NetworkImage("https://s3-eu-west-1.amazonaws.com/net.hetras.ibe/web/app/images/noimage.png"),
                                         fit: BoxFit.fitWidth
@@ -142,9 +143,11 @@ class _Qstate extends State<QuizPage>{
                                                   score++;
                                                 });
                                               }
+                                              setState(() {
+                                                score = ((score/widget.conts.length) * 100);
+                                              });
                                               Navigator.push(context, PageTransition(child: ScorePage(),type: PageTransitionType.scale, alignment: Alignment.center, duration: Duration(milliseconds: 700)));
                                             }
-                                            print((score/widget.conts.length) * 100);
                                           },
                                           child: Container(
                                               padding: EdgeInsets.symmetric(horizontal: 10),

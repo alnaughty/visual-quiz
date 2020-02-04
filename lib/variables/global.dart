@@ -19261,7 +19261,7 @@ List questionArray = [
             "type": "easy",
             "questions": [
               {
-                "q_img": "assets/images/math/1.1.png",
+                "q_img": "assets/images/math/math.png",
                 "question":"Susie needs 13 balloons. She already has 4 balloons. How many more balloons does she need?",
                 "answer": "2",
                 "choices":[

@@ -22,7 +22,7 @@ class _ScoreState extends State<ScorePage>{
   TextEditingController pName = new TextEditingController();
 String name;
 Timer _timer;
-int _start = 0;
+double _start = 0;
 bool show = false;
 int indexToChange;
 List scores = [];
@@ -79,6 +79,7 @@ Future<File> _writeData(String data) async{
     _writeData(dataToSave);
   }
 void startTimer() {
+    print(score);
   const oneSec = const Duration(milliseconds: 10);
   _timer = new Timer.periodic(
     oneSec,
@@ -289,7 +290,7 @@ void enterName(){
                   Container(
                     width: fd.size.width,
                     alignment: AlignmentDirectional.topCenter,
-                    child: Text("$_start%",style: TextStyle(
+                    child: Text("$_start",style: TextStyle(
                       color: Color.fromRGBO(211, 151, 0, 1),
                       fontWeight: FontWeight.bold,
                       fontSize: 50,
