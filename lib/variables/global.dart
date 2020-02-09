@@ -11309,7 +11309,288 @@ List questionArray = [
           },
           {
             "type": "hard",
-            "questions": []
+            "questions": [
+               //Q1
+          {
+            "q_img": "assets/images/science/sci.png",
+            "question":"What is a scientist called that studies the way things move?",
+            "answer": "2",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Meteorologist"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Physicist"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Biologist"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"Geologist"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"Therapist"
+              },
+            ],
+          },
+          //2
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"Scientist Christine is working on a new yoga move where she has to keep her center of balance equal. If she successfully does this, what will her pose look like?",
+            "answer": "1",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Balanced"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Clumsy"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Off Center"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"Shaky"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"none of these"
+              },
+            ],
+          },
+          //3
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"A force is any type of pull or…?",
+            "answer": "1",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Push"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Reset"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Balance"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"top"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"Shaky"
+              },
+            ],
+          },
+          //4
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"What are the ends of a magnet called?",
+            "answer": "1",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"North and South Pole"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":" East and West Pole"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":" Left and Right Pole"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":" Up and Down Pole"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"all of these"
+              },
+            ],
+          },
+          //5
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"What is the force that keeps us from floating in the air?",
+            "answer": "4",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Glue Shoes"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Magnetism"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Balance"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"Gravity"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"Stop"
+              },
+            ],
+          },
+          //6
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"When you see anything move, what must be acting upon it?",
+            "answer": "4",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Nothing"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"A Little Leprechaun"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"A Ghost"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"A Force"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"balance"
+              },
+            ],
+          },
+          //7
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"What happens when your center of balance is not equal?",
+            "answer": "4",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Balance"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Float in air"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Fall over"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"Nothing"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"Glue shoes"
+              },
+            ],
+          },
+          //8
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"Which of these things moves because of air or wind?",
+            "answer": "1",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Kite"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Cart"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Cheetah"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"Cars"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"Bike"
+              },
+            ],
+          },
+          //9
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"The South and South pole of a magnet will do what?",
+            "answer": "3",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Attract/stick together"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Fly away"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Repel/push away"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"They will do nothing"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"aLL OF THESE"
+              },
+            ],
+          },
+          //10
+           {
+            "q_img": "assets/images/science/sci.png",
+            "question":"Forces create what?",
+            "answer": "4",
+            "choices":[
+              {
+                "choice_id":"1",
+                "choice_content":"Motion"
+              },
+              {
+                "choice_id":"2",
+                "choice_content":"Stillness"
+              },
+              {
+                "choice_id":"3",
+                "choice_content":"Rest"
+              },
+              {
+                "choice_id":"4",
+                "choice_content":"Nothing"
+              },
+              {
+                "choice_id":"5",
+                "choice_content":"Balance"
+              },
+            ],
+          },
+            ]
           }
         ]
       },
@@ -20026,20 +20307,20 @@ List questionArray = [
               // Q2
               {
                 "q_img": "assets/images/math/math.png",
-                "question":"How many months are there in a decade?",
+                "question":"In 289, the place value of 8 is____________.",
                 "answer": "2",
                 "choices":[
                   {
                     "choice_id":"1",
-                    "choice_content":"tens"
+                    "choice_content":"Hundred"
                   },
                   {
                     "choice_id":"2",
-                    "choice_content":"thousand"
+                    "choice_content":"Thousand"
                   },
                   {
                     "choice_id":"3",
-                    "choice_content":"hundred"
+                    "choice_content":"Tens"
                   },
 
                 ],
@@ -20047,20 +20328,20 @@ List questionArray = [
               // Q3
               {
                 "q_img": "assets/images/math/math.png",
-                "question":"In Western civilization, what is the name given to the dates recorded before the birth of Christ?",
-                "answer": "2",
+                "question":"Three hundred and one can be written as ______.",
+                "answer": "1",
                 "choices":[
                   {
                     "choice_id":"1",
-                    "choice_content":"Pre-Christ (PC)"
+                    "choice_content":"331"
                   },
                   {
                     "choice_id":"2",
-                    "choice_content":"Before Christ (BC)"
+                    "choice_content":"31"
                   },
                   {
                     "choice_id":"3",
-                    "choice_content":"Ante-Christ (AC)"
+                    "choice_content":"3031"
                   },
 
                 ],
@@ -20248,7 +20529,7 @@ List questionArray = [
               //Q13
               {
                 "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
+                "question":"20+49-10=",
                 "answer": "1",
                 "choices":[
                   {
@@ -20268,8 +20549,8 @@ List questionArray = [
               //Q14
               {
                 "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
+                "question":"There are 3 sweets in one packet. How many sweets will be there in 9 packets? ",
+                "answer": "2",
                 "choices":[
                   {
                     "choice_id":"1",
@@ -20288,243 +20569,25 @@ List questionArray = [
               //Q15
               {
                 "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
+                "question":"____ is 200 more than 546.",
                 "answer": "1",
                 "choices":[
                   {
                     "choice_id":"1",
-                    "choice_content":"87"
+                    "choice_content":"223"
                   },
                   {
                     "choice_id":"2",
-                    "choice_content":"77"
+                    "choice_content":"444"
                   },
                   {
                     "choice_id":"3",
-                    "choice_content":"97"
+                    "choice_content":"678"
                   },
                 ],
               },
-              //Q16
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q17
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q18
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q19
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q20
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q21
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q20
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q22
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q23
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q24
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
-              //Q25
-              {
-                "q_img": "assets/images/math/math.png",
-                "question":"10+43+34 =",
-                "answer": "1",
-                "choices":[
-                  {
-                    "choice_id":"1",
-                    "choice_content":"87"
-                  },
-                  {
-                    "choice_id":"2",
-                    "choice_content":"77"
-                  },
-                  {
-                    "choice_id":"3",
-                    "choice_content":"97"
-                  },
-                ],
-              },
+             
+           
             ]
           },
           {
